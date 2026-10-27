@@ -5,6 +5,17 @@ Una pequeña aplicación para gestionar tareas de trabajo, con una interfaz mode
 
 ## Tecnologías empleadas
 
+### Node Package Manager
+
+`npm` (Node Package Manager) es el sistema de gestión de paquetes predeterminado para Node.js y el ecosistema de JavaScript. Funciona como una gran tienda de código donde los desarrolladores pueden descargar, compartir y administrar bibliotecas, frameworks y herramientas para sus proyectos.
+
+Sus características principales son:
+• Instalación automática: Se instala en tu ordenador de forma predeterminada cuando instalas Node.js.
+• Línea de comandos (CLI): Permite ejecutar órdenes desde la terminal para instalar, actualizar o eliminar librerías (como npm install o npm update).
+• Archivo package.json: Registra todas las dependencias y versiones que utiliza un proyecto para facilitar el trabajo en equipo.
+• Repositorio global: Cuenta con un registro público enorme con más de un millón de paquetes de software reutilizables.
+Puedes consultar más detalles y buscar librerías directamente en la página oficial de npm.
+
 ### Vite
 
 Vite es una herramienta de compilación y un servidor de desarrollo para la web moderna, creada por Evan You (el autor de Vue.js). Su nombre significa "rápido" en francés.
