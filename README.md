@@ -1,2 +1,57 @@
 # TaskFlow-Mini-gestor-de-tareas
 Una pequeña aplicación para gestionar tareas de trabajo, con una interfaz moderna y funcional. El usuario podrá añadir tareas, marcarlas como completadas, filtrarlas y eliminarlas.
+
+## Requisitos
+
+## Tecnologías empleadas
+
+### Vite
+
+Vite es una herramienta de compilación y un servidor de desarrollo para la web moderna, creada por Evan You (el autor de Vue.js). Su nombre significa "rápido" en francés.
+
+Está diseñada para reemplazar a empaquetadores más antiguos y pesados como Webpack, ofreciendo un arranque de servidor casi instantáneo y una recarga en caliente extremadamente veloz (HMR). Funciona con JavaScript, TypeScript y frameworks populares como React, Vue, Svelte y Angular.
+
+Vite utiliza los módulos de ES nativos del navegador. Al modificar el código, solo se actualiza el módulo específico que cambió. Viiene configurado para comenzar a trabajar de inmediato con JSX, TypeScript, CSS y más. Además, utiliza herramientas avanzadas, como Rolldown, para generar archivos estáticos limpios y rápidos.
+
+#### Módulos ES nativos
+
+Los módulos ES nativos (ESM o ECMAScript Modules) son el estándar oficial de JavaScript para dividir y organizar el código en múltiples archivos sin necesidad de empaquetadores externos (bundlers) como Webpack o Vite.
+
+El concepto es similar a los _header files_ de C. Ambos sirven para organizar y reorganizar código en múltiples archivos. Las analogías serían:
+
+| JavaScript  | C           |
+| ----------- | ----------- |
+| Archivo .js | Archivo .c  |
+| `export`    | Archivo .h  |
+| `import`    | `include`   |
+
+En C, si haces un #include "archivo.h", el preprocesador literalmente "copia y pega" el código de ese cabecero dentro de tu archivo antes de compilar. Si te equivocas e incluyes el mismo archivo varias veces, puedes duplicar código (por eso se usan los Include Guards como #ifndef).
+
+En JavaScript, el navegador lee los import, busca los archivos de forma inteligente, crea una sola instancia de cada módulo y le da a tu script acceso a las funciones que se hayan "exportado". No hay duplicación ni peligro de romper el código por importarlo en varios sitios.
+
+#### ¿Cómo crear un proyecto en Vite?
+
+```
+# 1. Crear el proyecto.
+npm create vite@latest
+
+# Sigue las instrucciones para elegir el nombre del proyecto y el framework.
+
+# 2. Entrar en la carpeta del proyecto.
+cd <nombre-de-tu-proyecto>
+
+# 3. Instalar las dependencias.
+bash npm install
+
+# 4. Iniciar el servidor de desarrollo.
+bash npm run dev
+
+```
+
+_El [enlace local](http://localhost:5173) se abrirá generalmente en el puerto 5173 del ordenador_
+
+#### Linter
+
+Un linter es una herramienta de análisis estático de código que examina tu proyecto en busca de errores de sintaxis, variables sin usar, fallos lógicos y malas prácticas antes de que se ejecute. En el ecosistema de Vite, un linter no viene integrado de serie en el núcleo de la herramienta. Vite se enfoca principalmente en ser un empaquetador y servidor de desarrollo ultrarrápido. Sin embargo, es fundamental añadirlo para mantener la calidad del código.
+
+`ESLint` es el estándar clásico y más utilizado para proyectos de JavaScript y TypeScript en Vite. Analiza el código mediante reglas personalizables y se integra con tu editor.
